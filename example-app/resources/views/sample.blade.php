@@ -11,22 +11,69 @@
 </head>
 <body>
 <div class=" d-flex vh-100">
-    <div class="bg-light border-end border-primary col-2 h-100">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">サイドバー</span>
+    <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <i class="bi bi-apple"></i>
+            <span class="fs-5 fw-semibold">Sidebar</span>
         </a>
-        <ul>
-            <li>リンク</li>
-            <li>リンク</li>
-            <li>リンク</li>
-            <li>リンク</li>
-            <li>リンク</li>
-            <li>リンク</li>
+        <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" >
+                    Home
+                </button>
+                <div class="collapse" id="home-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Updates</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse">
+                    Dashboard
+                </button>
+                <div class="collapse" id="dashboard-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                        <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                        <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse">
+                    Orders
+                </button>
+                <div class="collapse" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New</a></li>
+                        <li><a href="#" class="link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse">
+                    Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New...</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
-
     </div>
     <div class="container-fluid h-100">
         <div class="container-fluid vh-100">
